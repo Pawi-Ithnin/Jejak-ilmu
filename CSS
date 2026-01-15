@@ -1,0 +1,126 @@
+/* ===== Body ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7f6;
+  color: #333;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #1b5e20;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #a5d6a7;
+}
+
+/* ===== Input Search Cantik ala Islamic ===== */
+#search {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 30px auto;
+  padding: 12px 20px;
+  font-size: 1em;
+  border: 2px solid #a5d6a7;
+  border-radius: 30px;
+  outline: none;
+  background: #f1f8f1;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+#search:focus {
+  border-color: #1b5e20;
+  background: #e8f5e9;
+  box-shadow: 0 4px 10px rgba(27,94,32,0.2);
+}
+
+/* ===== Result container ===== */
+#result {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== Each card ===== */
+.kuliah-card {
+  background: #ffffff;
+  border-left: 5px solid #1b5e20;
+  border-radius: 15px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.kuliah-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.kuliah-card strong {
+  color: #1b5e20;
+  font-size: 1.2em;
+}
+
+.kuliah-card p {
+  margin: 5px 0;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.kuliah-card hr {
+  border: none;
+  border-top: 1px solid #a5d6a7;
+  margin: 10px 0 0 0;
+}
+
+/* ===== Highlight keyword ===== */
+.highlight {
+  background-color: #fff9c4;
+  font-weight: bold;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+/* ===== No result ===== */
+#result p {
+  text-align: center;
+  font-size: 1em;
+  color: #a5d6a7;
+  font-style: italic;
+}
+
+/* ===== Ruang Penaja / Iklan Compact ala Islamic ===== */
+.iklan {
+  max-width: 350px;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  padding: 12px;
+  border: 2px solid #2e7d32;
+  border-radius: 15px;
+  background: #e8f5e9;
+  box-shadow: 0 4px 8px rgba(46,125,50,0.2);
+}
+
+.iklan h2 {
+  color: #1b5e20;
+  margin-bottom: 12px;
+  font-size: 1.3em;
+  font-family: 'Amiri', serif;
+  letter-spacing: 1px;
+}
+
+.iklan img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid #c8e6c9;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.iklan img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(46,125,50,0.25);
+}
