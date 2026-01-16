@@ -6,6 +6,7 @@ body {
   padding: 30px;
 }
 
+/* ===== Tajuk ===== */
 h1 {
   text-align: center;
   color: #1b5e20;
@@ -19,7 +20,7 @@ h1 {
   display: block;
   width: 100%;
   max-width: 400px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 15px auto;
   padding: 12px 20px;
   font-size: 1em;
   border: 2px solid #a5d6a7;
@@ -34,6 +35,31 @@ h1 {
   border-color: #1b5e20;
   background: #e8f5e9;
   box-shadow: 0 4px 10px rgba(27,94,32,0.2);
+}
+
+/* ===== Butang Bantuan OKU Pekak ===== */
+.bantuan-oku {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.btn-fungsi {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 35px;
+  font-weight: bold;
+  font-size: 1.05em;
+  letter-spacing: 0.6px;
+  box-shadow: 0 4px 10px rgba(27,94,32,0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-fungsi:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 14px rgba(27,94,32,0.35);
 }
 
 /* ===== Result container ===== */
@@ -71,12 +97,6 @@ h1 {
   color: #555;
 }
 
-.kuliah-card hr {
-  border: none;
-  border-top: 1px solid #a5d6a7;
-  margin: 10px 0 0 0;
-}
-
 /* ===== Highlight keyword ===== */
 .highlight {
   background-color: #fff9c4;
@@ -96,7 +116,7 @@ h1 {
 /* ===== Ruang Penaja / Iklan Compact ala Islamic ===== */
 .iklan {
   max-width: 350px;
-  margin: 30px auto 0 auto;
+  margin: 35px auto 0 auto;
   text-align: center;
   padding: 12px;
   border: 2px solid #2e7d32;
