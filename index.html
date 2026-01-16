@@ -1,147 +1,41 @@
-/* ===== Body ===== */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f5f7f6;
-  color: #333;
-  padding: 30px;
-}
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Jejak Kuliah</title>
 
-/* ===== Tajuk ===== */
-h1 {
-  text-align: center;
-  color: #1b5e20;
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 2px #a5d6a7;
-}
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
-/* ===== Input Search Cantik ala Islamic ===== */
-#search {
-  display: block;
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto 15px auto;
-  padding: 12px 20px;
-  font-size: 1em;
-  border: 2px solid #a5d6a7;
-  border-radius: 30px;
-  outline: none;
-  background: #f1f8f1;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
+  <!-- Font Islamic -->
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+</head>
+<body>
 
-#search:focus {
-  border-color: #1b5e20;
-  background: #e8f5e9;
-  box-shadow: 0 4px 10px rgba(27,94,32,0.2);
-}
+  <h1>Jejak Kuliah</h1>
 
-/* ===== Butang Bantuan OKU Pekak ===== */
-.bantuan-oku {
-  text-align: center;
-  margin-bottom: 30px;
-}
+  <!-- Search -->
+  <input type="text" id="search" placeholder="Taip negeri: Johor, KL, Selangor, Pahang">
 
-.btn-fungsi {
-  display: inline-block;
-  padding: 12px 30px;
-  background: linear-gradient(135deg, #1b5e20, #2e7d32);
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 35px;
-  font-weight: bold;
-  font-size: 1.05em;
-  letter-spacing: 0.6px;
-  box-shadow: 0 4px 10px rgba(27,94,32,0.25);
-  transition: all 0.3s ease;
-}
+  <!-- Butang Bantuan OKU Pekak -->
+  <div class="bantuan-oku">
+    <a href="https://pawi-ithnin.github.io/Tanda" target="_blank" class="btn-fungsi">
+      👂🚫 Bantuan OKU Pekak
+    </a>
+  </div>
 
-.btn-fungsi:hover {
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 6px 14px rgba(27,94,32,0.35);
-}
+  <!-- Result -->
+  <div id="result"></div>
 
-/* ===== Result container ===== */
-#result {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 600px;
-  margin: 0 auto;
-}
+  <!-- Penaja -->
+  <div class="iklan">
+    <h2>Penaja</h2>
+    <a href="#" target="_blank">
+      <img src="https://i.ibb.co/4ZcpxQvx/photo-6289766686743269150-y.jpg" alt="Penaja">
+    </a>
+  </div>
 
-/* ===== Each card ===== */
-.kuliah-card {
-  background: #ffffff;
-  border-left: 5px solid #1b5e20;
-  border-radius: 15px;
-  padding: 15px 20px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-}
-
-.kuliah-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
-
-.kuliah-card strong {
-  color: #1b5e20;
-  font-size: 1.2em;
-}
-
-.kuliah-card p {
-  margin: 5px 0;
-  font-size: 0.95em;
-  color: #555;
-}
-
-/* ===== Highlight keyword ===== */
-.highlight {
-  background-color: #fff9c4;
-  font-weight: bold;
-  padding: 0 3px;
-  border-radius: 3px;
-}
-
-/* ===== No result ===== */
-#result p {
-  text-align: center;
-  font-size: 1em;
-  color: #a5d6a7;
-  font-style: italic;
-}
-
-/* ===== Ruang Penaja / Iklan Compact ala Islamic ===== */
-.iklan {
-  max-width: 350px;
-  margin: 35px auto 0 auto;
-  text-align: center;
-  padding: 12px;
-  border: 2px solid #2e7d32;
-  border-radius: 15px;
-  background: #e8f5e9;
-  box-shadow: 0 4px 8px rgba(46,125,50,0.2);
-}
-
-.iklan h2 {
-  color: #1b5e20;
-  margin-bottom: 12px;
-  font-size: 1.3em;
-  font-family: 'Amiri', serif;
-  letter-spacing: 1px;
-}
-
-.iklan img {
-  max-width: 100%;
-  border-radius: 10px;
-  border: 1px solid #c8e6c9;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.iklan img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(46,125,50,0.25);
-}
-
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
