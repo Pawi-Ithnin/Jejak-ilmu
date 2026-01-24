@@ -23,8 +23,6 @@ const dataKuliah = [
   { negeri: "Melaka", tajuk: "Kuliah Mahgrib", penceramah: "-", tarikh: "Jumaat 7/1", lokasi: "Masjid Tengkera" },
   { negeri: "Melaka", tajuk: "Kuliah Dhuha", penceramah: "-", tarikh: "Sabtu 10/1", lokasi: "Masjid Al Azim" },
   { negeri: "Melaka", tajuk: "Kuliah Mahgrib", penceramah: "-", tarikh: "Isnin 5/1", lokasi: "Masjid Jamek Ar Rahman Kg Pulai" }
-  
- 
 ];
 
 const input = document.getElementById("search");
