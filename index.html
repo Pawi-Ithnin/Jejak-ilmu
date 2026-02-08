@@ -4,30 +4,55 @@
   <meta charset="UTF-8">
   <title>Jejak Kuliah</title>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Font Islamic -->
   <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Tambahan CSS untuk butang baru supaya nampak kemas */
+    .tambah-majlis {
+      margin-top: 15px; /* Jarakkan sedikit dari butang atas */
+      text-align: center;
+    }
+    
+    .btn-tambah {
+      background-color: #ffffff; /* Warna putih supaya kontra dengan hijau */
+      color: #1b5e20; /* Tulisan hijau gelap */
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #1b5e20; /* Garisan luar hijau */
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn-tambah:hover {
+      background-color: #1b5e20;
+      color: white;
+    }
+  </style>
 </head>
 <body>
 
   <h1>Jejak Kuliah</h1>
 
-  <!-- Search -->
   <input type="text" id="search" placeholder="Taip negeri: Johor, KL, Selangor, Pahang">
 
-  <!-- Butang Bantuan OKU Pekak -->
   <div class="bantuan-oku">
     <a href="https://pawi-ithnin.github.io/Tanda" target="_blank" class="btn-fungsi">
       👂🚫 Bantuan OKU Pekak
     </a>
   </div>
 
-  <!-- Result -->
+  <div class="tambah-majlis">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJFFuerjcHtGdVPd59AXhDEj-pj_bbPCdB5qcz9KMQ20vpCA/viewform?usp=header" target="_blank" class="btn-tambah">
+      📢 Tambah Majlis Ilmu
+    </a>
+  </div>
+
   <div id="result"></div>
 
-  <!-- Penaja -->
   <div class="iklan">
     <h2>Penaja</h2>
     <a href="#" target="_blank">
@@ -35,7 +60,6 @@
     </a>
   </div>
 
-  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
